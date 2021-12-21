@@ -15,3 +15,4 @@
 ## 💝 Thanks to
 
 - [Pocco81](https://github.com/Pocco81)
+- [Lokesh Krishna](https://github.com/lokesh-krishna)
