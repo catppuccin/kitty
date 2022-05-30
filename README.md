@@ -17,7 +17,19 @@
 
 ## Usage
 
-1. Copy the contents of `catppuccin.conf` into your Kitty config file (usually stored at `~/.config/kitty/kitty.conf`)
+1. Copy your preferred palette's theme file into your Kitty themes directory (usually stored at `~/.config/kitty/themes/`). Or copy them all, e.g.,
+
+    ```shell
+    for palette in frappe latte macchiato mocha; do
+        curl -o "$HOME/.config/kitty/themes/catppuccin-$palette.conf" "https://raw.githubusercontent.com/catppuccin/kitty/main/$palette.conf";
+    done
+    ```
+
+2. Select and apply your preferred theme
+
+    ```
+    kitty +kitten themes
+    ```
 
 ## 💝 Thanks to
 
