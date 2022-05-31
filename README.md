@@ -12,17 +12,22 @@
 </p>
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/catppuccin/kitty/main/assets/ss.png"/>
+  <img src="assets/screenshot.png"/>
 </p>
 
 ## Usage
 
-1. Copy the contents of `catppuccin.conf` into your Kitty config file (usually stored at `~/.config/kitty/kitty.conf`)
+1. Choose your flavour.
+2. Copy the contents of _flavour_.conf into your kitty config file (usually stored at `~/.config/kitty/kitty.conf`)
+3. Save and enjoy!
+
+Alternatively copy all flavour configs into your kitty theme directory (usually `~/.config/kitty/themes/`) and then use the themes kitten to select your desired flavour. `kitty +kitten themes --reload-in=all <optional: Theme Name>` (_Catppuccin-Latte, Catppuccin-Frappe, Catppuccin-Macchiato, Catppuccin-Mocha_)
 
 ## 💝 Thanks to
 
 -   [Pocco81](https://github.com/Pocco81)
 -   [Lokesh Krishna](https://github.com/lokesh-krishna)
+-   [Andreas Grafen](https://github.com/andreasgrafen)
 
 &nbsp;
 
