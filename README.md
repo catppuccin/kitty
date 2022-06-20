@@ -6,7 +6,7 @@
 </h3>
 
 <p align="center">
-    <a href="https://github.com/catppuccin/kitty/stargazers"><img src="https://img.shields.io/github/stars/catppuccin/kitty?colorA=363a4f&colorB=b7bdf8&style=for-the-badge style=for-the-badgestyle=for-the-badge"></a>
+    <a href="https://github.com/catppuccin/kitty/stargazers"><img src="https://img.shields.io/github/stars/catppuccin/kitty?colorA=363a4f&colorB=b7bdf8&style=for-the-badge"></a>
     <a href="https://github.com/catppuccin/kitty/issues"><img src="https://img.shields.io/github/issues/catppuccin/kitty?colorA=363a4f&colorB=f5a97f&style=for-the-badge"></a>
     <a href="https://github.com/catppuccin/kitty/contributors"><img src="https://img.shields.io/github/contributors/catppuccin/kitty?colorA=363a4f&colorB=a6da95&style=for-the-badge"></a>
 </p>
