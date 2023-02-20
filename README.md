@@ -39,16 +39,22 @@
 ## Usage
 
 > **Note**<br>
-If you're using Kitty `>0.26.0`, all Catppuccin flavors are already included in Kitty! There's no need to install the base theme.
+> If you're using Kitty `>0.26.0`, all Catppuccin flavors are already included in Kitty! There's no need to install the base theme.
 
 > **Note**<br>
-This config **only** includes the Catppuccin color, it does **not** configure fonts or other styling.
+> This config **only** includes the Catppuccin color, it does **not** configure fonts or other styling.
 
 1. Choose your flavor.
 2. Copy the contents of _flavor_.conf into your kitty config file (usually stored at `~/.config/kitty/kitty.conf`)
 3. Save and enjoy!
 
-Alternatively copy all flavor configs into your kitty theme directory (usually `~/.config/kitty/themes/`) and then use the themes kitten to select your desired flavor. `kitty +kitten themes --reload-in=all <optional: Theme Name>` (_Catppuccin-Latte, Catppuccin-Frappe, Catppuccin-Macchiato, Catppuccin-Mocha_)
+Alternatively you can copy all flavor configs into your kitty theme directory (usually `~/.config/kitty/themes/`), and then use the themes kitten to select your desired flavor:
+
+```
+kitty +kitten themes --reload-in=all <optional: theme name>
+```
+
+`Catppuccin-Latte`, `Catppuccin-Frappe`, `Catppuccin-Macchiato`, `Catppuccin-Mocha` are their respective names.
 
 &nbsp;
 
@@ -56,6 +62,7 @@ Alternatively copy all flavor configs into your kitty theme directory (usually `
 
 - Q: **_"How can I style the Tab Bar like it is on the screenshots?"_**<br>
   A: The config settings for the Tab Bar are the following:
+
   ```ini
   tab_bar_min_tabs            1
   tab_bar_edge                bottom
@@ -66,6 +73,7 @@ Alternatively copy all flavor configs into your kitty theme directory (usually `
 
 - Q: **_"Which Fonts are used in the screenshots?"_**<br>
   A: The font used in the screenshot config is [Fira Code](https://github.com/tonsky/FiraCode). Furthermore, the following stylistic alternatives and ligatures are set:
+
   ```ini
   +cv02 +cv05 +cv09 +cv14 +ss04 +cv16 +cv31 +cv25 +cv26 +cv32 +cv28 +ss10 +zero +onum
   ```
@@ -77,9 +85,9 @@ Alternatively copy all flavor configs into your kitty theme directory (usually `
 
 ## 💝 Thanks to
 
--   [Pocco81](https://github.com/Pocco81)
--   [Lokesh Krishna](https://github.com/lokesh-krishna)
--   [Andreas Grafen](https://github.com/andreasgrafen)
+- [Pocco81](https://github.com/Pocco81)
+- [Lokesh Krishna](https://github.com/lokesh-krishna)
+- [Andreas Grafen](https://github.com/andreasgrafen)
 
 &nbsp;
 
