@@ -39,13 +39,16 @@
 ## Usage
 
 > **Note**<br>
-This config **only** includes the Catppuccin colours, it does **not** configure fonts or other styling.
+If you're using Kitty `>0.26.0`, all Catppuccin flavors are already included in Kitty! There's no need to install the base theme.
 
-1. Choose your flavour.
-2. Copy the contents of _flavour_.conf into your kitty config file (usually stored at `~/.config/kitty/kitty.conf`)
+> **Note**<br>
+This config **only** includes the Catppuccin color, it does **not** configure fonts or other styling.
+
+1. Choose your flavor.
+2. Copy the contents of _flavor_.conf into your kitty config file (usually stored at `~/.config/kitty/kitty.conf`)
 3. Save and enjoy!
 
-Alternatively copy all flavour configs into your kitty theme directory (usually `~/.config/kitty/themes/`) and then use the themes kitten to select your desired flavour. `kitty +kitten themes --reload-in=all <optional: Theme Name>` (_Catppuccin-Latte, Catppuccin-Frappe, Catppuccin-Macchiato, Catppuccin-Mocha_)
+Alternatively copy all flavor configs into your kitty theme directory (usually `~/.config/kitty/themes/`) and then use the themes kitten to select your desired flavor. `kitty +kitten themes --reload-in=all <optional: Theme Name>` (_Catppuccin-Latte, Catppuccin-Frappe, Catppuccin-Macchiato, Catppuccin-Mocha_)
 
 &nbsp;
 
@@ -62,7 +65,7 @@ Alternatively copy all flavour configs into your kitty theme directory (usually 
   ```
 
 - Q: **_"Which Fonts are used in the screenshots?"_**<br>
-  A: The font used in the screenshot config is [Fira Code](https://github.com/tonsky/FiraCode). Furthermore the following stylistic alternatives and ligatures are set:
+  A: The font used in the screenshot config is [Fira Code](https://github.com/tonsky/FiraCode). Furthermore, the following stylistic alternatives and ligatures are set:
   ```ini
   +cv02 +cv05 +cv09 +cv14 +ss04 +cv16 +cv31 +cv25 +cv26 +cv32 +cv28 +ss10 +zero +onum
   ```
