@@ -79,7 +79,7 @@ kitty +kitten themes --reload-in=all <optional: theme name>
   ```
 
 - Q: **_"Which fetch is used in the screenshots?"_**<br>
-  A: It's [pfetch with kitties](https://github.com/andreasgrafen/pfetch-with-kitties) — a slightly modified version if [pfetch](https://github.com/dylanaraps/pfetch) which adds the ASCII Kitty.
+  A: It's [pfetch with kitties](https://github.com/andreasgrafen/pfetch-with-kitties) — a slightly modified version of [pfetch](https://github.com/dylanaraps/pfetch) which adds the ASCII Kitty.
 
 &nbsp;
 
