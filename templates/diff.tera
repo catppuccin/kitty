@@ -1,0 +1,57 @@
+---
+whiskers:
+  version: "2.2.0"
+  matrix:
+    - flavor
+  filename: "themes/diff-{{ flavor.identifier }}.conf"
+---
+# vim:ft=kitty
+
+## name:     Catppuccin Kitty Diff {{ flavor.name }}
+## author:   Catppuccin Org
+## license:  MIT
+## upstream: https://github.com/catppuccin/kitty/blob/main/themes/diff-{{ flavor.identifier }}.conf
+## blurb:    Soothing pastel theme for the high-spirited!
+
+# text
+foreground           #{{ text.hex }}
+# base
+background           #{{ base.hex }}
+# subtext0
+title_fg             #{{ subtext0.hex }}
+
+# mantle
+title_bg             #{{ mantle.hex }}
+margin_bg            #{{ mantle.hex }}
+
+# subtext1
+margin_fg            #{% if flavor.dark %}{{ subtext0.hex }}{% else %}{{ subtext1.hex }}{% endif %}
+# mantle
+filler_bg            #{{ mantle.hex }}
+
+# 30% red, 70% base
+removed_bg           #{{ red | mix(color=base, amount=0.3) | get(key="hex") }}
+# 50% red, 50% base
+highlight_removed_bg #{{ red | mix(color=base, amount=0.5) | get(key="hex") }}
+# 40% red, 60% base
+removed_margin_bg    #{{ red | mix(color=base, amount=0.4) | get(key="hex") }}
+
+# 30% green, 70% base
+added_bg             #{{ green | mix(color=base, amount=0.3) | get(key="hex") }}
+# 50% green, 50% base
+highlight_added_bg   #{{ green | mix(color=base, amount=0.5) | get(key="hex") }}
+# 40% green, 60% base
+added_margin_bg      #{{ red | mix(color=base, amount=0.4) | get(key="hex") }}
+
+# mantle
+hunk_margin_bg       #{{ mantle.hex }}
+hunk_bg              #{{ mantle.hex }}
+
+# 40% yellow, 60% base
+search_bg            #{{ yellow | mix(color=base, amount=0.4) | get(key="hex") }}
+# text
+search_fg            #{{ text.hex }}
+# 30% sky, 70% base
+select_bg            #{{ sky | mix(color=base, amount=0.3) | get(key="hex") }}
+# text
+select_fg            #{{ text.hex }}
