@@ -1,0 +1,87 @@
+---
+whiskers:
+  version: "2.2.0"
+  matrix:
+    - flavor
+  filename: "themes/{{ flavor.identifier }}.conf"
+---
+# vim:ft=kitty
+
+## name:     Catppuccin Kitty {{ flavor.name }}
+## author:   Catppuccin Org
+## license:  MIT
+## upstream: https://github.com/catppuccin/kitty/blob/main/themes/{{ flavor.identifier }}.conf
+## blurb:    Soothing pastel theme for the high-spirited!
+
+
+
+# The basic colors
+foreground              #{{ text.hex }}
+background              #{{ base.hex }}
+selection_foreground    #{{ base.hex }}
+selection_background    #{{ rosewater.hex }}
+
+# Cursor colors
+cursor                  #{{ rosewater.hex }}
+cursor_text_color       #{{ base.hex }}
+
+# URL underline color when hovering with mouse
+url_color               #{{ rosewater.hex }}
+
+# Kitty window border colors
+active_border_color     #{{ lavender.hex }}
+inactive_border_color   #{{ overlay0.hex }}
+bell_border_color       #{{ yellow.hex }}
+
+# OS Window titlebar colors
+wayland_titlebar_color system
+macos_titlebar_color system
+
+# Tab bar colors
+active_tab_foreground   #{% if flavor.dark %}{{ crust.hex }}{% else %}{{ base.hex }}{% endif %}
+active_tab_background   #{{ mauve.hex }}
+inactive_tab_foreground #{{ text.hex }}
+inactive_tab_background #{% if flavor.dark %}{{ mantle.hex }}{% else %}{{ overlay0.hex }}{% endif %}
+tab_bar_background      #{% if flavor.dark %}{{ crust.hex }}{% else %}{{ surface1.hex }}{% endif %}
+
+# Colors for marks (marked text in the terminal)
+mark1_foreground #{{ base.hex }}
+mark1_background #{{ lavender.hex }}
+mark2_foreground #{{ base.hex }}
+mark2_background #{{ mauve.hex }}
+mark3_foreground #{{ base.hex }}
+mark3_background #{{ sapphire.hex }}
+
+# The 16 terminal colors
+
+# black
+color0 #{% if flavor.dark %}{{ surface1.hex }}{% else %}{{ subtext1.hex }}{% endif %}
+color8 #{% if flavor.dark %}{{ surface2.hex }}{% else %}{{ subtext0.hex }}{% endif %}
+
+# red
+color1 #{{ red.hex }}
+color9 #{{ red.hex }}
+
+# green
+color2  #{{ green.hex }}
+color10 #{{ green.hex }}
+
+# yellow
+color3  #{{ yellow.hex }}
+color11 #{{ yellow.hex }}
+
+# blue
+color4  #{{ blue.hex }}
+color12 #{{ blue.hex }}
+
+# magenta
+color5  #{{ pink.hex }}
+color13 #{{ pink.hex }}
+
+# cyan
+color6  #{{ teal.hex }}
+color14 #{{ teal.hex }}
+
+# white
+color7  #{% if flavor.dark %}{{ subtext1.hex }}{% else %}{{ surface2.hex }}{% endif %}
+color15 #{% if flavor.dark %}{{ subtext0.hex }}{% else %}{{ surface1.hex }}{% endif %}
