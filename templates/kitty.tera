@@ -29,7 +29,7 @@ cursor_text_color       #{{ base.hex }}
 scrollbar_handle_color  #{{ rosewater.hex }}
 scrollbar_track_color   #{{ surface1.hex }}
 
-# URL underline color when hovering with mouse
+# URL color when hovering with mouse
 url_color               #{{ rosewater.hex }}
 
 # Kitty window border colors
