@@ -78,6 +78,7 @@ kitty +kitten themes --reload-in=all <optional: theme name>
 - [Pocco81](https://github.com/Pocco81)
 - [Lokesh Krishna](https://github.com/lokesh-krishna)
 - [Andreas Grafen](https://github.com/andreasgrafen)
+- [Toria](https://github.com/ninetailedtori)
 
 &nbsp;
 
