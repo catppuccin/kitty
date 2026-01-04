@@ -26,7 +26,7 @@ cursor                  #{{ rosewater.hex }}
 cursor_text_color       #{{ base.hex }}
 
 # Scrollbar colors
-scrollbar_handle_color  #{{ rosewater.hex }}
+scrollbar_handle_color  #{{ overlay2.hex }}
 scrollbar_track_color   #{{ surface1.hex }}
 
 # URL color when hovering with mouse
