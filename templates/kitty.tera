@@ -1,6 +1,6 @@
 ---
 whiskers:
-  version: "2.2.0"
+  version: "^2.2.0"
   matrix:
     - flavor
   filename: "themes/{{ flavor.identifier }}.conf"
