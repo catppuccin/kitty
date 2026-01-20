@@ -41,7 +41,7 @@ added_bg             #{{ green | mix(color=base, amount=0.3) | get(key="hex") }}
 # 50% green, 50% base
 highlight_added_bg   #{{ green | mix(color=base, amount=0.5) | get(key="hex") }}
 # 40% green, 60% base
-added_margin_bg      #{{ red | mix(color=base, amount=0.4) | get(key="hex") }}
+added_margin_bg      #{{ green | mix(color=base, amount=0.4) | get(key="hex") }}
 
 # mantle
 hunk_margin_bg       #{{ mantle.hex }}
