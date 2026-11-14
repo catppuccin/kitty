@@ -1,6 +1,6 @@
 ---
 whiskers:
-  version: "^2.2.0"
+  version: "^2.10.0"
   matrix:
     - flavor
   filename: "themes/{{ flavor.identifier }}.conf"
@@ -57,35 +57,8 @@ mark3_foreground #{{ base.hex }}
 mark3_background #{{ sapphire.hex }}
 
 # The 16 terminal colors
-
-# black
-color0 #{% if flavor.dark %}{{ surface1.hex }}{% else %}{{ subtext1.hex }}{% endif %}
-color8 #{% if flavor.dark %}{{ surface2.hex }}{% else %}{{ subtext0.hex }}{% endif %}
-
-# red
-color1 #{{ red.hex }}
-color9 #{{ red.hex }}
-
-# green
-color2  #{{ green.hex }}
-color10 #{{ green.hex }}
-
-# yellow
-color3  #{{ yellow.hex }}
-color11 #{{ yellow.hex }}
-
-# blue
-color4  #{{ blue.hex }}
-color12 #{{ blue.hex }}
-
-# magenta
-color5  #{{ pink.hex }}
-color13 #{{ pink.hex }}
-
-# cyan
-color6  #{{ teal.hex }}
-color14 #{{ teal.hex }}
-
-# white
-color7  #{% if flavor.dark %}{{ subtext1.hex }}{% else %}{{ surface2.hex }}{% endif %}
-color15 #{% if flavor.dark %}{{ subtext0.hex }}{% else %}{{ surface1.hex }}{% endif %}
+{% for _, pair in flavor.ansi_color_pairs %}
+# {{ pair.identifier }}
+color{{ pair.normal.code }}{% if pair.bright.code >= 10 %} {% endif %} #{{ pair.normal.hex }}
+color{{ pair.bright.code }} #{{ pair.bright.hex }}
+{% endfor -%}
